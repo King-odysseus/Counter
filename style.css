@@ -1,3 +1,30 @@
+- {
+    box-sizing: border-box
+}
+
 .btn {
+    height: 2em;
+    padding: 0;
+    width: 5em;
+    margin: 0.5em;
     
+}
+
+.counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+
+.count {
+    font-size: 5em;
+}
+
+h1 {
+    font-size:4em;
 }
