@@ -1,31 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const countSpan = document.querySelector('.count');
-    const decreaseBtn = document.querySelector('.btn-decrease');
-    const resetBtn = document.querySelector('.btn-reset');
-    const increaseBtn = document.querySelector('.btn-increase');
+    // Defining elements in HTML page
+   const decrease = document.querySelector('.btn-decrease');
+   const increase = document.querySelector('.btn-increase');
+   const reset = document.querySelector('.btn-reset');
+   const countElement = document.querySelector('.count');
 
-    let count = 0;
+   let count = 0;
 
-    // Function to update the count display
-    function updateCount() {
-        countSpan.textContent = count;
-    }
+//update count functon
+ function UpdateCount() {
+    countElement.textContent = count;
+ }
 
-    // Event listener for the decrease button
-    decreaseBtn.addEventListener('click', function() {
-        count--;
-        updateCount();
-    });
 
-    // Event listener for the reset button
-    resetBtn.addEventListener('click', function() {
-        count = 0;
-        updateCount();
-    });
+//  increase
 
-    // Event listener for the increase button
-    increaseBtn.addEventListener('click', function() {
-        count++;
-        updateCount();
-    });
+increase.addEventListener('click', function (){
+    count++;
+   return 
+    UpdateCount();
 });
+
+
+});
+
+
